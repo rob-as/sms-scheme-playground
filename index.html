@@ -1,20 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>SMS Scheme Playground</title>
+    <title>SMS Scheme Playground</title>
+    <style>
+        body { font-family: sans-serif; }
+        p { margin-bottom: 1.5em; }
+        p a { font-weight: bold; font-size: 20px; text-decoration: none; }
+        h2 { margin: 2em 0; }
+        h1, h2 { text-decoration: underline; }
+    </style>
 </head>
 
 <body>
 
+<h1>SMS Scheme Playground</h1>
+
+<h2>Allegedly supported by iOS >= 8</h2>
+
 <p><a href="sms://&body=I%27m%20a%20testing%20string%20with%20%C5%BFpeci%C3%A6l%20characters%20%23%20https%3A%2F%2Fwww.google.com
 ">SMS with ampersand and double-slash</a></p>
-
-<p><a href="sms://?body=I%27m%20a%20testing%20string%20with%20%C5%BFpeci%C3%A6l%20characters%20%23%20https%3A%2F%2Fwww.google.com
-">SMS with question mark and double-slash</a></p>
 
 <p><a href="sms:&body=I%27m%20a%20testing%20string%20with%20%C5%BFpeci%C3%A6l%20characters%20%23%20https%3A%2F%2Fwww.google.com
 ">SMS with ampersand, without double-slash</a></p>
 
+<h2>Allegedly supported by Android</h2>
+
+<p><a href="sms://?body=I%27m%20a%20testing%20string%20with%20%C5%BFpeci%C3%A6l%20characters%20%23%20https%3A%2F%2Fwww.google.com
+">SMS with question mark and double-slash</a></p>
 
 <p><a href="sms:?body=I%27m%20a%20testing%20string%20with%20%C5%BFpeci%C3%A6l%20characters%20%23%20https%3A%2F%2Fwww.google.com
 ">SMS with question mark, without double-slash</a></p>
